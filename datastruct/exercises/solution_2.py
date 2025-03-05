@@ -23,6 +23,8 @@ def swap_nodes_in_pairs(linked_list: LinkedList[int]) -> LinkedList[int]:
             prev.next = second
         
         current.next = next_pair
+        prev = current
+        current = next_pair
     
     linked_list.head = new_head
     
